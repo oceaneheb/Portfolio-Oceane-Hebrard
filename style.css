@@ -1,0 +1,41 @@
+:root {
+    font-size: 10px;
+    --purple: #E4BFE1;
+    --turquoise: #5EEAD0; /*Appeler la variable : var(--turquoise)*/
+    --purple-button: #752F72;
+    --pink-button: #A63A71;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Scroll au clic sur les liens de la navBar*/
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    margin-top: 77px;
+}
+
+body {
+    background-color: #342039;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    color: #F8AFC0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+}
