@@ -1,0 +1,49 @@
+/* ----------- Footer --------------- */
+
+footer {
+    background-color: #180323;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 24px;
+}
+
+footer h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding: 24px;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px solid #5D5D5D;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer div div {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+}
+
+#footer-picto-reseaux-sociaux {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
