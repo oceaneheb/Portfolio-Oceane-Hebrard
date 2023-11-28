@@ -1,0 +1,47 @@
+/* ----------- Section 2 : Quelques mots sur moi --------------- */
+
+#about-me {
+    padding-top: 100px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+/* #about-me h2 {
+    color: #E4BFE1;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 22px;
+} */
+
+#about-me p {
+    color: #FFF;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 144.017%;
+    margin-bottom: 22px;
+}
+
+/* Cercle rose et carré vert */
+.circle-pink {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FD6261;
+    top: 31px;
+    right: 46px;
+}
+
+.carre-rose {
+    position: absolute;
+    bottom: 112px;
+    left: 55px;
+    width: 31px;
+    height: 31px;
+    transform: rotate(35.826deg);
+    border: 2px solid #FF3481;
+    top: 95%;
+}
