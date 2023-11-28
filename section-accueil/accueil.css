@@ -1,0 +1,118 @@
+/* ------------ Section 1 : Accueil ---------------- */
+
+#accueil {
+    position: relative;
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+/* Position des étoiles et de la fusée */
+.etoile3 {
+    position: absolute;
+    top: 7px;
+    left: 53px;
+}
+
+.etoile2 {
+    position: absolute;
+    top: 60px;
+    left: 29px;
+}
+
+.etoile1 {
+    position: absolute;
+    top: 29px;
+    left: 108px;
+}
+
+#fusee {
+    position: absolute;
+    bottom: 130px;
+    right: 22px;
+}
+
+/* Ombre lumineuse rose et violette arrière plan */
+#cercle-shadow-purple-accueil {
+    position: absolute;
+    border-radius: 585px;
+    background: #542897;
+    width: 585px;
+    height: 585px;
+    top: -200px;
+    left: 250px;
+    filter: blur(150px);
+    overflow: hidden;
+    z-index: -1; 
+}
+
+#cercle-shadow-pink-accueil {
+    position: absolute;
+    border-radius: 585px;
+    background: #B43B85;
+    width: 585px;
+    height: 585px;
+    top: 371px;
+    right: 330px;
+    filter: blur(182px);
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Image de profil Océane */
+.image-profil img {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+#accueil h3 {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 span {
+    color: var(--purple);
+}
+
+/* Boutton "Télécharger mon CV"*/
+#accueil-bouton-telecharger-cv {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    border: none;
+    font-weight: 500;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #FD6460 2.96%, #FF3481 102.96%);
+    color: white;
+    font-family: 'Inter', 'sans-serif';
+    width: 200px;
+    height: 40px;
+}
+
+/* Logo des réseaux sociaux */
+.picto-reseau-sociaux {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 16px;
+    align-items: center;
+    width: 20%;
+}
