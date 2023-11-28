@@ -1,0 +1,319 @@
+/* ----------- Section 3 : Domaines de compétences --------------- */
+
+#competences {
+    /* height: 768px; */
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    /* background-color: #342039; */
+}
+
+/* #skills h2 {
+    color: #E4BFE1;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+} */
+
+#competences .skills-phrase-accroche p {
+    color: #FFF;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+    line-height: 144.017%;
+}
+
+/* Liste des 3 boutons de compétences :Front/Back/Outils */
+#button-competences {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Si le bouton est actif : background avec dégradé orange/rose */
+.button-active {
+    background: linear-gradient(90deg, #FD665F 3.05%, #FF3184 99.84%);
+    color: white;
+    border: none;
+}
+
+/* Si le bouton est non actif */
+button {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: 500;
+    width: 169px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #FF3184;
+    background: none;
+}
+
+/* Liste des compétences */
+.list-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* La classe .non-active s'ajoute au bouton s'il n'est pas actif et cache la liste des compétences de ce bouton */
+.non-active {
+    display: none;
+}
+
+/* Détail pour 1 boîte "Compétence" */
+.box {
+    flex: 1;
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.pourcentage {
+    position: relative;
+    text-align: center;
+}
+
+/* Hauteur et Largeur du cadre qui contient les cercles */
+svg {
+    height: 110px;
+    width: 110px;
+    transform: rotate(-90deg);
+}
+
+svg circle {
+    fill: none;
+    stroke: #FD6660;
+    stroke-width: 7px;
+    transform: translate(5px, 5px); /* Décaler le cercle en hauteur et largeur de la moitié de la place qu'il reste dans la boîte de 100px = soit 10px pour le centrer*/
+    stroke-dasharray: 314; /* Augmenter la valeur pour avoir un cercle entier avec des pointillés */
+    stroke-dashoffset: 314; /* Sens inverse */
+    stroke-linecap: round; /* Bords arrondis */
+}
+
+/* Cercle bleu foncé d'arrière plan */ 
+svg circle:nth-child(1) {
+    stroke: #0F0C30;
+    stroke-dashoffset: 0;
+}
+
+/* --- Compétences Front : Cercle de pourcentage --- */
+
+/* Cercle de pourcentage HTML*/
+.box1 svg circle:nth-child(2) {
+    animation: cercle-html 2s forwards;
+}
+
+@keyframes cercle-html {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage CSS */
+.box2 svg circle:nth-child(2) {
+    animation: cercle-css 2s forwards;
+}
+
+@keyframes cercle-css {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage JavaScript */
+.box3 svg circle:nth-child(2) {
+    animation: cercle-js 2s forwards;
+}
+
+@keyframes cercle-js {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage Vue.js */
+.box4 svg circle:nth-child(2) {
+    animation: cercle-vue-js 2s forwards;
+}
+
+@keyframes cercle-vue-js {
+    to {
+        stroke-dashoffset: 236;
+    }
+}
+
+/* Cercle de pourcentage React */
+.box5 svg circle:nth-child(2) {
+    animation: cercle-react 2s forwards;
+}
+
+@keyframes cercle-react {
+    to {
+        stroke-dashoffset: 236;
+    }
+}
+
+/* --- Compétences Back : Cercle de pourcentage --- */
+
+/* Cercle de pourcentage PHP */
+.box6 svg circle:nth-child(2) {
+    animation: cercle-php 2s forwards;
+}
+
+@keyframes cercle-php {
+    to {
+        stroke-dashoffset: 157;
+    }
+}
+
+/* Cercle de pourcentage Symfony */
+.box7 svg circle:nth-child(2) {
+    animation: cercle-symfony 2s forwards;
+}
+
+@keyframes cercle-symfony {
+    to {
+        stroke-dashoffset: 236;
+    }
+}
+
+/* Cercle de pourcentage SQL */
+.box8 svg circle:nth-child(2) {
+    animation: cercle-sql 2s forwards;
+}
+
+@keyframes cercle-sql {
+    to {
+        stroke-dashoffset: 157;
+    }
+}
+
+/* --- Compétences Tools : Cercle de pourcentage --- */
+
+/* Cercle de pourcentage Git */
+.box9 svg circle:nth-child(2) {
+    animation: cercle-git 2s forwards;
+}
+
+@keyframes cercle-git {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage Github */
+.box10 svg circle:nth-child(2) {
+    animation: cercle-github 2s forwards;
+}
+
+@keyframes cercle-github {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage Notion */
+.box11 svg circle:nth-child(2) {
+    animation: cercle-notion 2s forwards;
+}
+
+@keyframes cercle-notion {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage Trello */
+.box12 svg circle:nth-child(2) {
+    animation: cercle-trello 2s forwards;
+}
+
+@keyframes cercle-trello {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage Figma */
+.box13 svg circle:nth-child(2) {
+    animation: cercle-figma 2s forwards;
+}
+
+@keyframes cercle-figma {
+    to {
+        stroke-dashoffset: 79;
+    }
+}
+
+/* Cercle de pourcentage Photoshop */
+.box14 svg circle:nth-child(2) {
+    animation: cercle-photoshop 2s forwards;
+}
+
+@keyframes cercle-photoshop {
+    to {
+        stroke-dashoffset: 157;
+    }
+}
+
+/* Cercle de pourcentage Illustrator */
+.box15 svg circle:nth-child(2) {
+    animation: cercle-illustrator 2s forwards;
+}
+
+@keyframes cercle-illustrator {
+    to {
+        stroke-dashoffset: 95;
+    }
+}
+
+/* Cercle de pourcentage Canva */
+.box16 svg circle:nth-child(2) {
+    animation: cercle-canva 2s forwards;
+}
+
+@keyframes cercle-canva {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Pictogramme de la compétence visée */
+.pourcentage img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Pourcentage acquis de la compétence visée */
+.pourcentage span {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: white;
+}
+
+/* Nom de la compétence visée */
+.box h4 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    color: white;
+}
