@@ -1,0 +1,89 @@
+/* ----------- Section 5 : Mes projets --------------- */
+
+#projets {
+    /* background-color: #342039; */
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* #projets h2 {
+    color: #E4BFE1;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+} */
+
+#projets-phrase-accroche {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 33px;
+    line-height: 144.017%;
+    /* font-family: 'Inter', 'sans-serif'; */
+}
+
+/* Liste des projets */
+#liste-projets {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.container-projet {
+    flex: 1;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.container-projet div:first-child {
+    background: linear-gradient(91deg, #C1CAD5 2.23%, #F8F8F8 98.83%);
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 242px;
+    text-align: center;
+}
+
+.container-projet div:first-child img {
+    max-width: 100%;
+    height: auto;
+}
+
+#description-projet {
+    background: linear-gradient(89deg, #AE3A86 0.2%, #642B94 98.54%);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 15px;
+}
+
+#description-projet h3 {
+    font-weight: 700;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+#description-projet p {
+    color: white;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+#description-projet div {
+    display: flex;
+    gap: 0px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#projet-button-plus {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    padding: 0px;
+}
+
+#description-projet img {
+    object-fit: cover;
+}
