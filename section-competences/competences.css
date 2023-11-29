@@ -88,13 +88,13 @@ button {
 }
 
 /* Hauteur et Largeur du cadre qui contient les cercles */
-svg {
+.pourcentage svg {
     height: 110px;
     width: 110px;
     transform: rotate(-90deg);
 }
 
-svg circle {
+.pourcentage svg circle {
     fill: none;
     stroke: #FD6660;
     stroke-width: 7px;
@@ -105,7 +105,7 @@ svg circle {
 }
 
 /* Cercle bleu foncé d'arrière plan */ 
-svg circle:nth-child(1) {
+.pourcentage svg circle:nth-child(1) {
     stroke: #0F0C30;
     stroke-dashoffset: 0;
 }
