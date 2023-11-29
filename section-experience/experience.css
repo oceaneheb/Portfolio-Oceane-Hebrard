@@ -87,3 +87,122 @@
     font-size: 15px;
     color: #342039;
 }
+
+/* ----- Mise en forme des containers ----- */
+
+.formation-experience {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+/* .formation-experience h2 {
+    color: #E4BFE1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+} */
+
+.liste-formation-experience {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container {
+    flex: 1;
+    min-width: 100%;
+    max-width: 100%;
+    /* min-height: 150px;
+    max-height: 150px; */
+    /* background-color: white; */
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+/* .box-purple {
+    background-color: #F9D3E8;
+} */
+
+.container + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 50px; */
+}
+
+.container span {
+    color: #342039;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.container h3 {
+    color: #342039;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.container div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container a {
+    display: block;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #FD695D 0%, #FF2D87 100%);
+    padding: 9px;
+    color: white;
+    font-size: 12px;
+    width: 90px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.container img {
+    object-fit: contain;
+}
+
+
+#cercle-shadow-pink-experience {
+    position: absolute;
+    border-radius: 585px;
+    background: #B43B85;
+    width: 585px;
+    height: 585px;
+    top: 2400px;
+    left: 250px;
+    filter: blur(150px);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#cercle-shadow-purple-experience {
+    position: absolute;
+    border-radius: 585px;
+    background: #542897; 
+    width: 585px;
+    height: 585px;
+    top: 3000px;
+    right: 145px;
+    filter: blur(182px);
+    overflow: hidden;
+    z-index: -1;
+}
