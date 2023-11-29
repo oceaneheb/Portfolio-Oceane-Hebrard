@@ -30,13 +30,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Picto close modal */
 #picto-close-edf {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     opacity: 50%;
 }
 
@@ -47,9 +47,10 @@
 }
 
 .modal-experience h3 {
-    font-size: 16px;
+    font-size: 18px;
     color: #342039;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 /*Pictogramme de localisation*/
@@ -60,11 +61,12 @@
 }
 
 .modal-experience span {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
 }
 
-.modal-experience div:nth-child(3) {
+.modal-experience div:nth-child(4) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,13 +76,14 @@
 }
 
 .modal-experience h4 {
-    font-size: 13px;
+    font-size: 16px;
+    /* margin-top: 10px; */
 }
 
 .modal-experience ul {
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 0px;
-    font-size: 12px;
+    font-size: 15px;
     color: #342039;
 }
