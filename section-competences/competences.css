@@ -1,29 +1,40 @@
-/* ----------- Section 3 : Domaines de compétences --------------- */
-
 #competences {
-    /* height: 768px; */
-    padding-top: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 0px;
-    /* background-color: #342039; */
+    margin-top: 10px;
+    /* margin-bottom: 70px; */
 }
 
-/* #skills h2 {
-    color: #E4BFE1;
-    font-size: 20px;
+#competences h2 {
+    font-family: 'Inter', sans-serif;
+    color: #F8AFC0;
+    font-size: 25px;
     font-weight: 600;
-    margin-bottom: 20px;
-} */
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
 
-#competences .skills-phrase-accroche p {
+@media screen and (min-width: 992px) {
+    #competences h2 {
+        text-align: center;
+    }
+}
+
+#competences p {
     color: #FFF;
-    text-align: justify;
-    font-size: 15px;
+    /* text-align: justify; */
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
     font-weight: 400;
-    line-height: normal;
-    margin-bottom: 30px;
     line-height: 144.017%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ------- Affichage des compétences pour les écrans de téléphone ------- */
+
+@media screen and (max-width: 992px) {
+    #liste-competences-desktop {
+        display: none;
+    }
 }
 
 /* Liste des 3 boutons de compétences :Front/Back/Outils */
@@ -33,11 +44,11 @@
     gap: 10px;
 }
 
-/* Si le bouton est actif : background avec dégradé orange/rose */
-.button-active {
-    background: linear-gradient(90deg, #FD665F 3.05%, #FF3184 99.84%);
-    color: white;
-    border: none;
+@media screen and (min-width: 1400px) {
+    #button-competences {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Si le bouton est non actif */
@@ -48,7 +59,7 @@ button {
     border: none;
     font-weight: 500;
     width: 169px;
-    height: 40px;
+    height: 60px;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -61,11 +72,18 @@ button {
     background: none;
 }
 
+/* Si le bouton est actif : background avec dégradé orange/rose */
+.button-active {
+    background: linear-gradient(90deg, #FD665F 3.05%, #FF3184 99.84%);
+    color: white;
+    border: none;
+}
+
 /* Liste des compétences */
 .list-skills {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 50px;
     gap: 25px;
     padding: 20px;
 }
@@ -80,6 +98,20 @@ button {
     flex: 1;
     min-width: 45%;
     max-width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        min-width: 30%;
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .box {
+        min-width: 22%;
+        max-width: 22%;
+    }
 }
 
 .pourcentage {
@@ -316,4 +348,20 @@ button {
     margin-top: 5px;
     font-size: 15px;
     color: white;
+}
+
+/* --------- Affichage des compétences pour les écrans desktop -------- */
+
+@media screen and (min-width: 992px) {
+    #liste-competences-phone {
+        display: none;
+    }
+}
+
+.liste-competences-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 70px;
 }
