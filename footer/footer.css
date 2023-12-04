@@ -2,8 +2,6 @@
 
 footer {
     background-color: #180323;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-bottom: 24px;
 }
 
@@ -11,7 +9,7 @@ footer h2 {
     text-align: center;
     padding-top: 50px;
     padding: 24px;
-    font-size: 19px;
+    font-size: 25px;
     color: white;
     font-weight: 600;
 }
@@ -21,22 +19,29 @@ footer h2 {
     flex-direction: column;
     gap: 15px;
     border-top: 1px solid #5D5D5D;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-footer div div {
+/* @media screen and (min-width: 456px) {
+    #contact {
+        justify-content: center;
+    }
+} */
+
+
+#contact div {
     display: flex;
     color: white;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
-footer p {
+footer span {
     color: white;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #footer-picto-reseaux-sociaux {
