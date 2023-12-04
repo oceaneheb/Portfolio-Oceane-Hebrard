@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <!--Lien CSS-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./header/header.css">
+    <title>Portfolio Océane Hebrard</title>
     <link rel="stylesheet" href="./section-accueil/accueil.css">
     <link rel="stylesheet" href="./section-about-me/about-me.css">
     <link rel="stylesheet" href="./section-competences/competences.css">
@@ -15,23 +11,20 @@
     <link rel="stylesheet" href="./section-experience/experience.css">
     <link rel="stylesheet" href="./section-portfolio/portfolio.css">
     <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./header/header.css">
 
-    <!--Lien JS-->
-    <script src="./header/header.js" async></script>
-    <script src="./section-accueil/accueil.js" async></script>
-    <script src="./section-about-me/about-me.js" async></script>
     <script src="./section-competences/competences.js" async></script>
-    <script src="./section-formation/formation.js" async></script>
-    <script src="./section-experience/experience.js" async></script>
-    <script src="./section-portfolio/portfolio.js" async></script>
-    <script src="./footer/footer.js" async></script>
+    <script src="./header/header.js" async></script>
 
+    <!--Lien CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #291430;">
+
     <!--Header et navBar-->
     <header>
         <menu class="navbar-mobile">
-            <div class="modal">
+            <div class="modal-nav">
                 <a href="#accueil" class="lien-navbar">Accueil</a>
                 <a href="#about-me" class="lien-navbar">Qui suis-je ?</a>
                 <a href="#competences" class="lien-navbar">Compétences</a>
@@ -45,7 +38,7 @@
             </svg>
         </menu>
     </header>
-    
+
     <main>
 
         <!--Ombre lumineuse rose et violette d'arrière plan -->
@@ -53,563 +46,1087 @@
         <div id="cercle-shadow-pink-accueil"></div>
 
         <!-- Section 1 : Accueil -->
-        <section id="accueil">
-
-            <!--Etoiles blanches au-dessus de la photo de profil-->
-            <div class="etoile3">
-                <img src="img/etoile3.png" alt="Pictogramme d'une étoile blanche">
-            </div>
-            <div class="etoile2">
-                <img src="img/etoile2.svg" alt="Pictogramme d'une étoile blanche">
-            </div>
-            <div class="etoile1">
-                <img src="img/etoile1.svg" alt="Pictogramme d'une étoile blanche">
-            </div>
-
-            <!--Illustration de la fusée-->
-            <div id="fusee">
-                <img src="img/fusee.png" alt="Illustration d'une fusée blanche">
-            </div>
-
-            <!--Image de profil Océane-->
-            <div class="image-profil">
-                <img src="img/photo-profil1.png" alt="Photo de profil Océane">
-            </div>
-
-            <!--Contenu textuel de la section Accueil-->
-            <h3>Bonjour et bienvenue sur mon portfolio !</h3>
-            <h1>Je suis Océane Hébrard,<br><span>Conceptrice Développeuse d'Applications</span></h1>
+        <section id="accueil" class="p-2 mb-5">
             
-            <!--Bouton de téléchargement CV-->
-            <a href="./cv-oceane-hebrard.pdf" target="_blank" id="accueil-bouton-telecharger-cv">
-                <span>Télécharger mon CV</span>
-                <img src="img/telecharger-cv.svg" alt="Pictogramme de téléchargement">
-            </a>
+            <!--Image fusée-->
+            <div id="image-fusee-petit-ecran">
+                <img src="img/fusee.png" alt="Illustration d'une fusée blanche" width="230px" height="266px">
+            </div>
 
-            <!--Logo Linkedin et GitHub-->
-            <div class="picto-reseau-sociaux">
-                <a href="https://linkedin.com/in/oceane-hebrard" target="_blank"><img src="img/picto-linkedin.svg" alt="Logo noir et blanc Linkedin"></a>
-                <a href="https://github.com/oceaneheb" target="_blank"><img src="img/picto-git-hub.svg" alt="Logo noir et blanc GitHub"></a>
+            <div class="container">
+                <div class="row align-items-center gy-4 mt-4 justify-items-center">
+                    <div class="col-12 col-md-11 col-lg-8 col-xl-6">
+                        <img id="photo-oceane" src="img/photo-profil3.jpg" alt="Photo de profil Océane">
+                        <h3 class="fw-light text-white">Bonjour et bienvenue sur mon portfolio !</h3>
+                        <h1 class="fw-bold mt-4 text-white">Je suis Océane Hébrard,<br><span>Conceptrice Développeuse d'Applications</span></h1>
+
+                        <!--Bouton de téléchargement CV-->
+                        <a id="btn-telecharger-cv" class="mt-4" href="./cv-oceane-hebrard.pdf" target="_blank" id="accueil-bouton-telecharger-cv">
+                            <span class="text-white">Télécharger mon CV</span>
+                            <img src="img/telecharger-cv.svg" alt="Pictogramme de téléchargement">
+                        </a>
+
+                        <!--Logo Linkedin et GitHub-->
+                        <div class="mt-5 mb-5">
+                            <a class="me-2" href="https://linkedin.com/in/oceane-hebrard" target="_blank"><img src="img/picto-linkedin2.png" alt="Logo noir et blanc Linkedin"></a>
+                            <a href="https://github.com/oceaneheb" target="_blank"><img src="img/picto-git-hub.png" alt="Logo noir et blanc GitHub"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-xl-2">
+                        <div id="image-fusee-ecran-desktop">
+                            <img src="img/fusee.png" alt="Illustration d'une fusée blanche">
+                        </div>            
+                    </div>
+                </div>
             </div>
 
         </section>
 
         <!-- Section 2 : Quelques mots sur moi -->
-        <section id="about-me">
-
-            <!--Cercle et carré-->
-            <div class="circle-pink"></div>
-            <div class="carre-rose"></div>
+        <section id="about-me" class="p-2">
 
             <!--Contenu textuel-->
-            <div>
-                <h2>Qui suis-je ?</h2>
-                <p>Après plusieurs années d'études dans le secteur de la communication, je décide suite à l'obtention de mon Master de donner un nouvel élan à ma carrière.<br><br>En janvier 2023, je réalise ma première formation dans le monde du développement web qui confirme mon souhait de poursuivre vers une formation diplômante. J'intègre alors en septembre une formation de niveau Bac+3 de Concepteur Développeur d'Applications.<br><br>De nature ambitieuse, autonome et curieuse, j'aime apprendre et me former au quotidien sur de nouveaux langages.<br><br>Je recherche actuellement un stage non rémunéré de 10 semaines du 25 mars au 07 juin 2024. Ce stage pourrait aboutir sur un contrat en alternance ou une future embauche. Je suis prête à me former en amont de mon stage sur de nouveaux langages de programmation afin d'être opérationnelle sur les missions confiées.<br><br>Si mon profil vous intéresse, n'hésitez pas à me contacter par téléphone, mail ou via mes réseaux professionnels.<br><br>Au plaisir d'échanger avec vous !</p>
+            <div class="container">
+                <div class="row align-items-center gy-4 mt-4 justify-items-center">
+                    <div class="col-lg-6">
+                        <div class="image-personnalite">
+                        <!--Insérer Image-->
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h2>Qui suis-je ?</h2>
+                        <p class="text-white">Après plusieurs années d'études dans le secteur de la communication, je décide suite à l'obtention de mon Master de donner un nouvel élan à ma carrière.<br><br>En janvier 2023, je réalise ma première formation dans le monde du développement web qui confirme mon souhait de poursuivre vers une formation diplômante. J'intègre alors en septembre une formation de niveau Bac+3 de Concepteur Développeur d'Applications.<br><br>De nature ambitieuse, autonome et curieuse, j'aime apprendre et me former au quotidien sur de nouveaux langages.<br><br>Je recherche actuellement un stage non rémunéré de 10 semaines du 25 mars au 07 juin 2024. Ce stage pourrait aboutir sur un contrat en alternance ou une future embauche. Je suis prête à me former en amont de mon stage sur de nouveaux langages de programmation afin d'être opérationnelle sur les missions confiées.<br><br>Si mon profil vous intéresse, n'hésitez pas à me contacter par téléphone, par mail ou via mes réseaux professionnels.<br><br>Au plaisir d'échanger avec vous !</p>
+                    </div>
+                </div>
             </div>
-
         </section>
 
         <!-- Section 3 : Domaines de compétences-->
-        <section id="competences">
+        <section class="p-2">
 
-            <!--Phrase d'accroche de la section-->
-            <div class="skills-phrase-accroche">
-                <h2>Domaines de compétences</h2>
-                <p>Je possède des compétences dans plusieurs langages de programmation Front et Back ainsi que dans la gestion d'outils de projets et de design graphique.</p>
-            </div>
+            <!--Ombre lumineuse purple et pink-->
+            <div id="cercle-shadow-purple-formation"></div>
+            <div id="cercle-shadow-pink-formation"></div>
 
-            <!--Boutons des 3 types de compétences-->
-            <div id="button-competences">
-                <button class="button-active" type="button">Front</button>
-                <button type="button">Back</button>
-                <button type="button">Outils</button>
-            </div>
-            
-            <!---------- Liste des compétences ----------->
-
-            <!--Liste des compétences Front-->
-            <div class="front-skills list-skills">
-
-                <!--Boîte 1 : Compétence HTML-->
-                <div class="box box1">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-html.png" alt="">
-                        <span>75%</span> 
+            <div class="container" id="competences">
+                <!--Phrase d'accroche de la section-->
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Domaines de compétences</h2>
+                        <!-- <p>Je possède des compétences dans plusieurs langages de programmation Front et Back ainsi que dans la gestion d'outils de projets et de design graphique.</p>     -->
                     </div>
-                    <h4>HTML 5</h4>
                 </div>
 
-                <!--Boîte 2 : Compétence CSS -->
-                <div class="box box2">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-css.png" alt="">
-                        <span>75%</span>
-                    </div>
-                    <h4>CSS 3</h4>
-                </div>
-
-                <!--Boîte 3 : Compétence JS -->
-                <div class="box box3">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-javascript.png" alt="">
-                        <span>75%</span>
-                    </div>
-                    <h4>JavaScript</h4>
-                </div>
-
-                <!--Boîte 4 : : Compétence Vue.js-->
-                <div class="box box4">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-vue-js.png" alt="">
-                        <span>25%</span>
-                    </div>
-                    <h4>Vue.js</h4>
-                </div>
-
-                <!--Boîte 5 : Compétence React-->
-                <div class="box box5">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-react.png" alt="">
-                        <span>25%</span>
-                    </div>
-                    <h4>React</h4>
-                </div>
-            </div>
-
-            <!--Liste des compétences Back -->
-            <div class="back-skills list-skills non-active">
-
-                <!--Boîte 6 : Compétence PHP-->
-                <div class="box box6">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-php.png" alt="">
-                        <span>50%</span> 
-                    </div>
-                    <h4>PHP</h4>
-                </div>
-
-                <!--Boîte 7 : Compétence Symfony -->
-                <div class="box box7">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-symfony.png" alt="">
-                        <span>25%</span>
-                    </div>
-                    <h4>Symfony</h4>
-                </div>
-
-                <!--Boîte 8 : Compétence SQL -->
-                <div class="box box8">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-sql.png" alt="">
-                        <span>50%</span>
-                    </div>
-                    <h4>SQL</h4>
-                </div>
-            </div>
-
-            <!--Liste des compétences Outils -->
-            <div class="tool-skills list-skills non-active">
-
-                <!--Boîte 9 : Compétence Git-->
-                <div class="box box9">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-git.png" alt="">
-                        <span>75%</span> 
-                    </div>
-                    <h4>Git</h4>
-                </div>
-
-                <!--Boîte 10 : Compétence GitHub -->
-                <div class="box box10">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-git-hub.svg" alt="">
-                        <span>75%</span>
-                    </div>
-                    <h4>GitHub</h4>
-                </div>
-
-                <!--Boîte 11 : Compétence Notion -->
-                <div class="box box11">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-notion.png" alt="">
-                        <span>75%</span>
-                    </div>
-                    <h4>Notion</h4>
-                </div>
-
-                <!--Boîte 12 : : Compétence Trello-->
-                <div class="box box12">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-trello.png" alt="">
-                        <span>75%</span>
-                    </div>
-                    <h4>Trello</h4>
-                </div>
-
-                <!--Boîte 13 : Compétence Figma-->
-                <div class="box box13">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-figma.png" alt="">
-                        <span>75%</span>
-                    </div>
-                    <h4>Figma</h4>
-                </div>
-
-                <!--Boîte 14 : Compétence Photoshop-->
-                <div class="box box14">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-photoshop.png" alt="">
-                        <span>50%</span>
-                    </div>
-                    <h4>Photoshop</h4>
-                </div>
-
-                <!--Boîte 15 : Compétence Illustrator-->
-                <div class="box box15">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-illustrator.png" alt="">
-                        <span>70%</span>
-                    </div>
-                    <h4>Illustrator</h4>
-                </div>
-
-                <!--Boîte 16 : Compétence Canva-->
-                <div class="box box16">
-                    <div class="pourcentage"> 
-                        <svg>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                            <circle cx="50px" cy="50px" r="50px"></circle>
-                        </svg>
-                        <img src="img/picto-canva.png" alt="">
-                        <span>100%</span>
-                    </div>
-                    <h4>Canva</h4>
-                </div>
-            </div>
+                <div id="liste-competences-phone">
                 
+                    <div class="row justify-content-center justify-items-center">
+                        <div class="col-lg-6">
+                            <!--Boutons des 3 types de compétences-->
+                            <div id="button-competences">
+                                <button class="button-active" type="button">Langages Front</button>
+                                <button type="button">Langages Back</button>
+                                <button type="button">Outils</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!---------- Liste des compétences ----------->
+
+                    <!--Liste des compétences Front-->
+                    <div class="front-skills list-skills">
+
+                        <!--Boîte 1 : Compétence HTML-->
+                        <div class="box box1">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-html.png" alt="">
+                                <span>75%</span> 
+                            </div>
+                            <h4>HTML 5</h4>
+                        </div>
+
+                        <!--Boîte 2 : Compétence CSS -->
+                        <div class="box box2">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-css.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>CSS 3</h4>
+                        </div>
+
+                        <!--Boîte 3 : Compétence JS -->
+                        <div class="box box3">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-javascript.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>JavaScript</h4>
+                        </div>
+
+                        <!--Boîte 4 : : Compétence Vue.js-->
+                        <div class="box box4">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-vue-js.png" alt="">
+                                <span>25%</span>
+                            </div>
+                            <h4>Vue.js</h4>
+                        </div>
+
+                        <!--Boîte 5 : Compétence React-->
+                        <div class="box box5">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-react.png" alt="">
+                                <span>25%</span>
+                            </div>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+
+                    <!--Liste des compétences Back -->
+                    <div class="back-skills list-skills non-active">
+
+                        <!--Boîte 6 : Compétence PHP-->
+                        <div class="box box6">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-php.png" alt="">
+                                <span>50%</span> 
+                            </div>
+                            <h4>PHP</h4>
+                        </div>
+
+                        <!--Boîte 7 : Compétence Symfony -->
+                        <div class="box box7">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-symfony.png" alt="">
+                                <span>25%</span>
+                            </div>
+                            <h4>Symfony</h4>
+                        </div>
+
+                        <!--Boîte 8 : Compétence SQL -->
+                        <div class="box box8">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-sql.png" alt="">
+                                <span>50%</span>
+                            </div>
+                            <h4>SQL</h4>
+                        </div>
+                    </div>
+
+                    <!--Liste des compétences Outils -->
+                    <div class="tool-skills list-skills non-active">
+
+                        <!--Boîte 9 : Compétence Git-->
+                        <div class="box box9">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-git.png" alt="">
+                                <span>75%</span> 
+                            </div>
+                            <h4>Git</h4>
+                        </div>
+
+                        <!--Boîte 10 : Compétence GitHub -->
+                        <div class="box box10">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-git-hub.svg" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>GitHub</h4>
+                        </div>
+
+                        <!--Boîte 11 : Compétence Notion -->
+                        <div class="box box11">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-notion.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>Notion</h4>
+                        </div>
+
+                        <!--Boîte 12 : : Compétence Trello-->
+                        <div class="box box12">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-trello.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>Trello</h4>
+                        </div>
+
+                        <!--Boîte 13 : Compétence Figma-->
+                        <div class="box box13">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-figma.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>Figma</h4>
+                        </div>
+
+                        <!--Boîte 14 : Compétence Photoshop-->
+                        <div class="box box14">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-photoshop.png" alt="">
+                                <span>50%</span>
+                            </div>
+                            <h4>Photoshop</h4>
+                        </div>
+
+                        <!--Boîte 15 : Compétence Illustrator-->
+                        <div class="box box15">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-illustrator.png" alt="">
+                                <span>70%</span>
+                            </div>
+                            <h4>Illustrator</h4>
+                        </div>
+
+                        <!--Boîte 16 : Compétence Canva-->
+                        <div class="box box16">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-canva.png" alt="">
+                                <span>100%</span>
+                            </div>
+                            <h4>Canva</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="liste-competences-desktop">
+                    <!---------- Liste des compétences ----------->
+
+                    <div class="liste-competences-desktop">
+                    
+                        <!--Boîte 1 : Compétence HTML-->
+                        <div class="box box1">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-html.png" alt="">
+                                <span>75%</span> 
+                            </div>
+                            <h4>HTML 5</h4>
+                        </div>
+
+                        <!--Boîte 2 : Compétence CSS -->
+                        <div class="box box2">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-css.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>CSS 3</h4>
+                        </div>
+
+                        <!--Boîte 3 : Compétence JS -->
+                        <div class="box box3">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-javascript.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>JavaScript</h4>
+                        </div>
+
+                        <!--Boîte 4 : : Compétence Vue.js-->
+                        <div class="box box4">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-vue-js.png" alt="">
+                                <span>25%</span>
+                            </div>
+                            <h4>Vue.js</h4>
+                        </div>
+
+                        <!--Boîte 5 : Compétence React-->
+                        <div class="box box5">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-react.png" alt="">
+                                <span>25%</span>
+                            </div>
+                            <h4>React</h4>
+                        </div>
+
+                        <!--Boîte 6 : Compétence PHP-->
+                        <div class="box box6">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-php.png" alt="">
+                                <span>50%</span> 
+                            </div>
+                            <h4>PHP</h4>
+                        </div>
+
+                        <!--Boîte 7 : Compétence Symfony -->
+                        <div class="box box7">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-symfony.png" alt="">
+                                <span>25%</span>
+                            </div>
+                            <h4>Symfony</h4>
+                        </div>
+
+                        <!--Boîte 8 : Compétence SQL -->
+                        <div class="box box8">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-sql.png" alt="">
+                                <span>50%</span>
+                            </div>
+                            <h4>SQL</h4>
+                        </div>
+
+                        <!--Boîte 9 : Compétence Git-->
+                        <div class="box box9">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-git.png" alt="">
+                                <span>75%</span> 
+                            </div>
+                            <h4>Git</h4>
+                        </div>
+
+                        <!--Boîte 10 : Compétence GitHub -->
+                        <div class="box box10">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-git-hub.svg" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>GitHub</h4>
+                        </div>
+
+                        <!--Boîte 11 : Compétence Notion -->
+                        <div class="box box11">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-notion.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>Notion</h4>
+                        </div>
+
+                        <!--Boîte 12 : : Compétence Trello-->
+                        <div class="box box12">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-trello.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>Trello</h4>
+                        </div>
+
+                        <!--Boîte 13 : Compétence Figma-->
+                        <div class="box box13">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-figma.png" alt="">
+                                <span>75%</span>
+                            </div>
+                            <h4>Figma</h4>
+                        </div>
+
+                        <!--Boîte 14 : Compétence Photoshop-->
+                        <div class="box box14">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-photoshop.png" alt="">
+                                <span>50%</span>
+                            </div>
+                            <h4>Photoshop</h4>
+                        </div>
+
+                        <!--Boîte 15 : Compétence Illustrator-->
+                        <div class="box box15">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-illustrator.png" alt="">
+                                <span>70%</span>
+                            </div>
+                            <h4>Illustrator</h4>
+                        </div>
+
+                        <!--Boîte 16 : Compétence Canva-->
+                        <div class="box box16">
+                            <div class="pourcentage"> 
+                                <svg>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                    <circle cx="50px" cy="50px" r="50px"></circle>
+                                </svg>
+                                <img src="img/picto-canva.png" alt="">
+                                <span>100%</span>
+                            </div>
+                            <h4>Canva</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
         </section>
 
-        <div id="cercle-shadow-purple-formation"></div>
-        <div id="cercle-shadow-pink-formation"></div>
         <!--Section 4 : Formation et Diplômes -->
-        <section class="formation" id="formation">
-            <h2>Formation & Diplômes</h2>
-            <div class="liste-formation">
+        <section  class="p-2">
 
-                <!--1ère formation : CDA-->
-                <div class="formation-left">
-                    <!--Cercle, ligne, cercle-->
-                    <svg id="forme-courbe" xmlns="http://www.w3.org/2000/svg" width="202" height="68" viewBox="0 0 202 68" fill="none">
-                        <circle cx="7" cy="7" r="7" fill="#FF2D87"/>
-                        <circle cx="195" cy="61" r="7" fill="#FF2D87"/>
-                        <path d="M7.5 9.5C11.4543 44.1924 69 52.5 100.5 40C132 27.5 163.184 0.130844 187 26C198.845 38.8656 197.5 62 197.5 62" stroke="#FF2D87"/>
-                    </svg>
-
-                    <div>
-                        <span>1</span>
+            <div class="container" id="formation">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Formation & Diplômes</h2>
                     </div>
-                    <span>Sept. 2023 à Juin 2024</span>
-                    <h3>Bac +3 - Concepteur Développeur d'Applications</h3>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        <p>Pôle Numérique de l'Adrar</p>
+                </div>
+                
+                <div class="row justify-content-center" id="liste-formation-phone">
+                    <div class="col-lg-10">
+                        <div class="liste-formation-phone">
+    
+                            <!--1ère formation : CDA-->
+                            <div class="formation-left">
+                                <!--Cercle, ligne, cercle-->
+                                <svg id="forme-courbe" xmlns="http://www.w3.org/2000/svg" width="202" height="68" viewBox="0 0 202 68" fill="none">
+                                    <circle cx="7" cy="7" r="7" fill="#FF2D87"/>
+                                    <circle cx="195" cy="61" r="7" fill="#FF2D87"/>
+                                    <path d="M7.5 9.5C11.4543 44.1924 69 52.5 100.5 40C132 27.5 163.184 0.130844 187 26C198.845 38.8656 197.5 62 197.5 62" stroke="#FF2D87"/>
+                                </svg>
+            
+                                <div>
+                                    <span>1</span>
+                                </div>
+                                <span>Sept. 2023 à Juin 2024</span>
+                                <h3>Bac +3 - Concepteur Développeur d'Applications</h3>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                    <p>Pôle Numérique de l'Adrar</p>
+                                </div>
+                                <a href="http://www.adrar-polenum.fr/team/FICHES/FICHE_CDA_ADRAR_POLE_NUMERIQUE_2023.pdf" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                            </div>
+            
+                            <!--2ème formation : Compétences +-->
+                            <div class="formation-left formation-right">
+                                <!--Cercle, ligne, cercle-->
+                                <svg id="forme-courbe-right" xmlns="http://www.w3.org/2000/svg" width="208" height="75" viewBox="0 0 208 75" fill="none">
+                                    <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 208 0)" fill="#FF2D87"/>
+                                    <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 14 61)" fill="#FF2D87"/>
+                                    <path d="M201 6.5C197.046 41.1924 156 58.5 124.5 46C93 33.5 45.8163 1.13084 22 27C10.1554 39.8656 7 60.5 7 60.5" stroke="#FF2D87"/>
+                                </svg>
+            
+                                <div>
+                                    <span>2</span>
+                                </div>
+                                <span>Juil. 2023 à Aout 2023</span>
+                                <h3>Compétences Plus - Formation HTML, CSS, Javascript et Bootstrap</h3>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                    <p>Pôle Numérique de l'Adrar</p>
+                                </div>
+                                <a target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                            </div>
+            
+                            <!--3ème formation : AFP-->
+                            <div class="formation-left">
+                                <!--Cercle, ligne, cercle-->
+                                <svg id="forme-courbe" xmlns="http://www.w3.org/2000/svg" width="202" height="68" viewBox="0 0 202 68" fill="none">
+                                    <circle cx="7" cy="7" r="7" fill="#FF2D87"/>
+                                    <circle cx="195" cy="61" r="7" fill="#FF2D87"/>
+                                    <path d="M7.5 9.5C11.4543 44.1924 69 52.5 100.5 40C132 27.5 163.184 0.130844 187 26C198.845 38.8656 197.5 62 197.5 62" stroke="#FF2D87"/>
+                                </svg>
+            
+                                <div>
+                                    <span>3</span>
+                                </div>
+                                <span>Janv. 2023 à Mars 2023</span>
+                                <h3>Apple Foundation Program - Formation à Swift & Swift UI</h3>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                    <p>Simplon.co, Toulouse</p>
+                                </div>
+                                <a href="https://simplon.co/formation/foundation/24" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                            </div>
+            
+                            <!--4ème formation : Master Com/Market-->
+                            <div class="formation-left formation-right">
+                                <!--Cercle, ligne, cercle-->
+                                <svg id="forme-courbe-right" xmlns="http://www.w3.org/2000/svg" width="208" height="75" viewBox="0 0 208 75" fill="none">
+                                    <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 208 0)" fill="#FF2D87"/>
+                                    <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 14 61)" fill="#FF2D87"/>
+                                    <path d="M201 6.5C197.046 41.1924 156 58.5 124.5 46C93 33.5 45.8163 1.13084 22 27C10.1554 39.8656 7 60.5 7 60.5" stroke="#FF2D87"/>
+                                </svg>
+            
+                                <div>
+                                    <span>4</span>
+                                </div>
+                                <span>Sept. 2020 à Sept. 2022</span>
+                                <h3>Bac +5 - Master Communication Digitale et Marketing d'Influence</h3>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                    <p>ESG Toulouse</p>
+                                </div>
+                                <a href="https://www.esg.fr/ecole-toulouse/mastere/communication" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                            </div>
+            
+                            <!--5ème formation : Bachelor Com-->
+                            <div class="formation-left derniere-formation">
+                                <div>
+                                    <span>5</span>
+                                </div>
+                                <span>Sept. 2019 à Sept. 2020</span>
+                                <h3>Bac +3 - Bachelor Communication</h3>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                    <p>ESG Toulouse</p>
+                                </div>
+                                <a href="https://www.esg.fr/ecole-toulouse/bachelor/communication" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                            </div>
+            
+                        </div>
+        
                     </div>
-                    <a href="http://www.adrar-polenum.fr/team/FICHES/FICHE_CDA_ADRAR_POLE_NUMERIQUE_2023.pdf" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
                 </div>
 
-                <!--2ème formation : Compétences +-->
-                <div class="formation-left formation-right">
-                    <!--Cercle, ligne, cercle-->
-                    <svg id="forme-courbe-right" xmlns="http://www.w3.org/2000/svg" width="208" height="75" viewBox="0 0 208 75" fill="none">
-                        <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 208 0)" fill="#FF2D87"/>
-                        <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 14 61)" fill="#FF2D87"/>
-                        <path d="M201 6.5C197.046 41.1924 156 58.5 124.5 46C93 33.5 45.8163 1.13084 22 27C10.1554 39.8656 7 60.5 7 60.5" stroke="#FF2D87"/>
-                    </svg>
+                <div class="row justify-content-center" id="liste-formation-ecran-desktop">
+                    <div class="col-lg-10">
+                        <div class="liste-formation-ecran-desktop">
+    
+                            <!--1ère formation : CDA-->
+                            <div class="container-formation">
+                                <div>
+                                    <div>
+                                        <span>1</span>
+                                    </div>
+                                    <div>
+                                        <span>Sept. 2023 à Juin 2024</span>
+                                        <h3>Bac +3 - Concepteur Développeur d'Applications</h3>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span>Pôle Numérique de l'Adrar</span>
+                                        </div>
+                                        <a href="http://www.adrar-polenum.fr/team/FICHES/FICHE_CDA_ADRAR_POLE_NUMERIQUE_2023.pdf" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!--4ème formation : Master Com/Market-->
+                            <div class="container-formation formation-flex-end">
+                                <div>
+                                    <div>
+                                        <span>4</span>
+                                    </div>
+                                    <div>
+                                        <span>Sept. 2020 à Sept. 2022</span>
+                                        <h3>Bac +5 - Mastère Communication Digitale et Marketing d'Influence</h3>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span>ESG Toulouse</span>
+                                        </div>
+                                        <a href="https://www.esg.fr/ecole-toulouse/mastere/communication" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div>
-                        <span>2</span>
+                            <!--2ème formation : Compétences +-->
+                            <div class="container-formation">
+                                <div>
+                                    <div>
+                                        <span>2</span>
+                                    </div>
+                                    <div>
+                                        <span>Juil. 2023 à Aout 2023</span>
+                                        <h3>Compétences Plus - Formation HTML, CSS, Javascript et Bootstrap</h3>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span>Pôle Numérique de l'Adrar</span>
+                                        </div>
+                                        <a target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!--5ème formation : Bachelor Com-->
+                            <div class="container-formation formation-flex-end">
+                                <div>
+                                    <div>
+                                        <span>5</span>
+                                    </div>
+                                    <div>
+                                        <span>Sept. 2019 à Sept. 2020</span>
+                                        <h3>Bac +3 - Bachelor Communication</h3>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span>ESG Toulouse<span>
+                                        </div>
+                                        <a href="https://www.esg.fr/ecole-toulouse/bachelor/communication" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--3ème formation : AFP-->
+                            <div class="container-formation">
+                                <div>
+                                    <div>
+                                        <span>3</span>
+                                    </div>
+                                    <div>
+                                        <span>Janv. 2023 à Mars 2023</span>
+                                        <h3>Apple Foundation Program - Formation à Swift & Swift UI</h3>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span>Simplon.co, Toulouse</span>
+                                        </div>
+                                        <a href="https://simplon.co/formation/foundation/24" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
                     </div>
-                    <span>Juil. 2023 à Aout 2023</span>
-                    <h3>Compétences Plus - Formation HTML, CSS, Javascript et Bootstrap</h3>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        <p>Pôle Numérique de l'Adrar</p>
-                    </div>
-                    <a target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
                 </div>
-
-                <!--3ème formation : AFP-->
-                <div class="formation-left">
-                    <!--Cercle, ligne, cercle-->
-                    <svg id="forme-courbe" xmlns="http://www.w3.org/2000/svg" width="202" height="68" viewBox="0 0 202 68" fill="none">
-                        <circle cx="7" cy="7" r="7" fill="#FF2D87"/>
-                        <circle cx="195" cy="61" r="7" fill="#FF2D87"/>
-                        <path d="M7.5 9.5C11.4543 44.1924 69 52.5 100.5 40C132 27.5 163.184 0.130844 187 26C198.845 38.8656 197.5 62 197.5 62" stroke="#FF2D87"/>
-                    </svg>
-
-                    <div>
-                        <span>3</span>
-                    </div>
-                    <span>Janv. 2023 à Mars 2023</span>
-                    <h3>Apple Foundation Program - Formation à Swift & Swift UI</h3>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        <p>Simplon.co, Toulouse</p>
-                    </div>
-                    <a href="https://simplon.co/formation/foundation/24" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
-                </div>
-
-                <!--4ème formation : Master Com/Market-->
-                <div class="formation-left formation-right">
-                    <!--Cercle, ligne, cercle-->
-                    <svg id="forme-courbe-right" xmlns="http://www.w3.org/2000/svg" width="208" height="75" viewBox="0 0 208 75" fill="none">
-                        <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 208 0)" fill="#FF2D87"/>
-                        <circle cx="7" cy="7" r="7" transform="matrix(-1 0 0 1 14 61)" fill="#FF2D87"/>
-                        <path d="M201 6.5C197.046 41.1924 156 58.5 124.5 46C93 33.5 45.8163 1.13084 22 27C10.1554 39.8656 7 60.5 7 60.5" stroke="#FF2D87"/>
-                    </svg>
-
-                    <div>
-                        <span>4</span>
-                    </div>
-                    <span>Sept. 2020 à Sept. 2022</span>
-                    <h3>Bac +5 - Mastère Communication Digitale et Marketing d'Influence</h3>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        <p>ESG Toulouse</p>
-                    </div>
-                    <a href="https://www.esg.fr/ecole-toulouse/mastere/communication" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
-                </div>
-
-                <!--5ème formation : Bachelor Com-->
-                <div class="formation-left derniere-formation">
-                    <div>
-                        <span>5</span>
-                    </div>
-                    <span>Sept. 2019 à Sept. 2020</span>
-                    <h3>Bac +3 - Bachelor Communication</h3>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fd695d" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        <p>ESG Toulouse</p>
-                    </div>
-                    <a href="https://www.esg.fr/ecole-toulouse/bachelor/communication" target="blank" class="btn-en-savoir-plus-formation">En savoir +</a>
-                </div>
-
+    
             </div>
         </section>
 
         <!-- Section 5 : Expérience Pro -->
-        <section class="formation-experience" id="experience">
-            <!--Cercle shadow-->
-            <!-- <div id="cercle-shadow-purple-experience"></div>
-            <div id="cercle-shadow-pink-experience"></div> -->
-            <h2>Expérience Pro</h2>
-            <div>
-                <div class="liste-formation-experience">
+        <section class="p-2">
 
-                        <!-- Première expérience-->
-                        <div class="container box-purple">
+        <div id="cercle-shadow-purple-experience"></div>
+        
+            <div class="container" id="experience">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Expérience Pro & Perso</h2>
+                    </div>
+                </div>
+
+                <div id="liste-experience-phone">
+                    <div class="liste-experience">
+    
+                        <!-- Première expérience : Séjour en Irlande -->
+                        <div class="container-experience">
+                            <span>Mai 2023 à Juin 2023</span>
+                            <h3>Séjour linguistique de 4 semaines en Irlande</h3>
                             <div>
-                                <div>
-                                    <span>Sept. 2020 à Sept. 2022</span>
-                                    <h3>Chargée de communication<br>(Contrat en alternance)</h3>
-                                </div>
-                                <div>
-                                    <img src="img/logo-edf.png" alt="Logo du groupe EDF">
-                                    <a class="btn-experience-edf">En savoir +</a>
-                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                                    <path d="M6.17891 13.6854C7.64844 11.9254 11 7.65967 11 5.26362C11 2.35766 8.53646 0 5.5 0C2.46354 0 0 2.35766 0 5.26362C0 7.65967 3.35156 11.9254 4.82109 13.6854C5.17344 14.1049 5.82656 14.1049 6.17891 13.6854ZM5.5 3.50908C5.98623 3.50908 6.45255 3.69393 6.79636 4.02297C7.14018 4.35201 7.33333 4.79829 7.33333 5.26362C7.33333 5.72895 7.14018 6.17523 6.79636 6.50427C6.45255 6.83331 5.98623 7.01816 5.5 7.01816C5.01377 7.01816 4.54745 6.83331 4.20364 6.50427C3.85982 6.17523 3.66667 5.72895 3.66667 5.26362C3.66667 4.79829 3.85982 4.35201 4.20364 4.02297C4.54745 3.69393 5.01377 3.50908 5.5 3.50908Z" fill="white"/>
+                                </svg>
+                                <span>Education First, Dublin, Irlande</span>
                             </div>
+                            <!-- <button>
+                                <span>Mes missions</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                    <path d="M1 1L6 6L1 11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                            </button> -->
                         </div>
 
-                        <!--Ouverture de la modale au click sur le bouton "En savoir +"-->
-                        <div class="modal-experience detail-experience-edf">
-                            <div>
-                                <img src="./img/logo-edf.png" alt="Logo EDF couleur">
-                                <svg id="picto-close-edf" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#342039}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                            </div>
+                        <!-- Deuxième expérience : alternance EDF -->
+                        <div class="container-experience">
                             <span>Sept. 2020 à Sept. 2022</span>
-                            <h3>Chargée de communication (alternance)</h3>
+                            <h3>Chargée de communication (Contrat en alternance)</h3>
                             <div>
-                                <svg id="picto-localisation-exp" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#342039}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                                    <path d="M6.17891 13.6854C7.64844 11.9254 11 7.65967 11 5.26362C11 2.35766 8.53646 0 5.5 0C2.46354 0 0 2.35766 0 5.26362C0 7.65967 3.35156 11.9254 4.82109 13.6854C5.17344 14.1049 5.82656 14.1049 6.17891 13.6854ZM5.5 3.50908C5.98623 3.50908 6.45255 3.69393 6.79636 4.02297C7.14018 4.35201 7.33333 4.79829 7.33333 5.26362C7.33333 5.72895 7.14018 6.17523 6.79636 6.50427C6.45255 6.83331 5.98623 7.01816 5.5 7.01816C5.01377 7.01816 4.54745 6.83331 4.20364 6.50427C3.85982 6.17523 3.66667 5.72895 3.66667 5.26362C3.66667 4.79829 3.85982 4.35201 4.20364 4.02297C4.54745 3.69393 5.01377 3.50908 5.5 3.50908Z" fill="white"/>
+                                    </svg>
                                 <span>EDF, Centrale Nucléaire de Golfech</span>
                             </div>
-                            <h4>Description des missions</h4>
-                            <ul>
-                                <li>Rédaction d'articles</li>
-                                <li>Suivi des plans de communication</li>
-                                <li>Création des supports de communication : affiche, logo, campagne de communication, présentation...</li>
-                                <li>Appui événementiel</li>
-                                <li>Tournage et montage vidéo (Première Pro)</li>
-                            </ul>
+
+                            <!-- Button : Mes missions -->
+                            <button data-bs-toggle="modal" data-bs-target="#modal1">
+                                <span>Mes missions</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                    <path d="M1 1L6 6L1 11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                            </button>
                         </div>
 
-                        <!-- Deuxième expérience-->
-                        <div class="container box-purple">
-                            <div>
-                                <div>
-                                    <span>Sept. 2019 à Juin 2020</span>
-                                    <h3>Assistante Web Marketing<br>(Contrat en alternance)</h3>
-                                </div>
-                                <div>
-                                    <img src="img/logo-mountnpass.png" alt="Logo mountnpass">
-                                    <a class="btn-experience-mountnpass">En savoir +</a>
+                        <!-- Modal : Missions EDF-->
+                        <div class="modal fade" id="modal1">
+
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="color: #342039;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <img src="img/logo-edf.png" alt="">
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" aria-describedby="content">
+                                        <span style="font-size: 15px;">Sept. 2020 à Sept. 2022</span>
+                                        <h3 style="font-size: 18px;" class="mt-2">Chargée de communication (alternance)</h3>
+                                        <div>
+                                            <svg id="picto-localisation-exp" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#342039}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span style="font-size: 15px;">EDF, Centrale Nucléaire de Golfech</span>
+                                        </div>
+                                        <h5 class="mt-3" style="font-size: 16px;">Description des missions</h5>
+                                        <ul style="font-size: 15px;">
+                                            <li>Rédaction d'articles pour le site internet et la newsletter hebdomadaire</li>
+                                            <li>Suivi et élaboration des plans de communication</li>
+                                            <li>Création des divers supports de communication : affiche, logo, illustration, présentation...</li>
+                                            <li>Appui événementiel</li>
+                                            <li>Tournage et montage vidéo</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Ouverture de la modale au click sur le bouton "En savoir +"-->
-                        <div class="modal-experience detail-experience-mountnpass">
+                        <!-- Troisième expérience : alternance mountNpass -->
+                        <div class="container-experience">
+                            <span>Sept. 2019 à Juin 2020</span>
+                            <h3>Assistante Web Marketing (Contrat en alternance)</h3>
                             <div>
-                                <img src="./img/logo-mountnpass.png" alt="Logo mountnpass couleur">
-                                <svg id="picto-close-mountnpass" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#342039}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                            </div>
-                            <span>Sept. 2019 à Juin. 2020</span>
-                            <h3>Assistante Web Marketing (alternance)</h3>
-                            <div>
-                                <svg id="picto-localisation-exp" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#342039}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                                    <path d="M6.17891 13.6854C7.64844 11.9254 11 7.65967 11 5.26362C11 2.35766 8.53646 0 5.5 0C2.46354 0 0 2.35766 0 5.26362C0 7.65967 3.35156 11.9254 4.82109 13.6854C5.17344 14.1049 5.82656 14.1049 6.17891 13.6854ZM5.5 3.50908C5.98623 3.50908 6.45255 3.69393 6.79636 4.02297C7.14018 4.35201 7.33333 4.79829 7.33333 5.26362C7.33333 5.72895 7.14018 6.17523 6.79636 6.50427C6.45255 6.83331 5.98623 7.01816 5.5 7.01816C5.01377 7.01816 4.54745 6.83331 4.20364 6.50427C3.85982 6.17523 3.66667 5.72895 3.66667 5.26362C3.66667 4.79829 3.85982 4.35201 4.20364 4.02297C4.54745 3.69393 5.01377 3.50908 5.5 3.50908Z" fill="white"/>
+                                    </svg>
                                 <span>mountNpass, Toulouse</span>
                             </div>
-                            <h4>Description des missions</h4>
-                            <ul>
-                                <li>Gestion et animation des réseaux sociaux</li>
-                                <li>Elaboration de la stratégie social média</li>
-                                <li>Création de visuels et contenus réseaux sociaux</li>
-                                <li>Veille stratégique et analyse des KPI's</li>
-                                <li>Rédaction de contenu et article pour le site internet</li>
-                            </ul>
+
+                            <!-- Boutton : Mes missions -->
+                            <button data-bs-toggle="modal" data-bs-target="#modal2">
+                                <span>Mes missions</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                                    <path d="M1 1L6 6L1 11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                            </button>
                         </div>
+                        
+                        <!-- Modal : Missions mountNpass -->
+                        <div class="modal fade" id="modal2">
+
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="color: #342039;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <img src="img/logo-mountnpass.png" alt="">
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" aria-describedby="content">
+                                        <span style="font-size: 15px;">Sept. 2019 à Juin 2020</span>
+                                        <h3 style="font-size: 18px;" class="mt-2">Assistante Web Marketing (alternance)</h3>
+                                        <div>
+                                            <svg id="picto-localisation-exp" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#342039}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                                            <span style="font-size: 15px;">MountNpass, Toulouse</span>
+                                        </div>
+                                        <h5 class="mt-3" style="font-size: 16px;">Description des missions</h5>
+                                        <ul style="font-size: 15px;">
+                                            <li>Gestion et animation des réseaux sociaux</li>
+                                            <li>Elaboration de la stratégie social media</li>
+                                            <li>Création de visuels et contenus réseaux sociaux</li>
+                                            <li>Veille stratégique et analyse des KPI's</li>
+                                            <li>Rédaction de contenu SEO pour le site internet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div id="liste-formation-grand-ecran">
 
                 </div>
+    
             </div>
         </section>
 
         <!-- Section 6 : Mes projets -->
-        <section id="projets">
+        <section id="projets" class="p-3">
 
-            <h2>Portfolio</h2>
-            <p id="projets-phrase-accroche">Je vous présente quelques-uns de mes projets les plus importants réalisés lors de mes formations.</p>
-
-            <!--Liste des projets-->
-            <div id="liste-projets">
-
-                <!--Premier projet-->
-                <div class="container-projet">
-                    <div>
-                        <img src="img/projet-blabladrar2.png" alt="Image de description du projet BlaBla'Drar">
-                    </div>
-                    <div id="description-projet">
-                        <h3>BlaBla'Drar</h3>
-                        <div>
-                            <p>L'application dédiée au covoiturage du quotidien</p>
-                            <button id="projet-button-plus">
-                                <img src="img/picto-plus.png" alt="">
-                            </button>
-                        </div>
+            <div class="container" id="projets">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Portfolio</h2>
+                        <!-- <p id="projets-phrase-accroche">Je vous présente quelques-uns de mes projets les plus importants réalisés lors de mes formations.</p> -->
                     </div>
                 </div>
 
-                <!--Deuxième projet-->
-                <div class="container-projet">
-                    <div>
-                        <img src="img/projet-timecook.png" alt="Image de description du projet BlaBla'Drar">
-                    </div>
-                    <div id="description-projet">
-                        <h3>Time Cook</h3>
+                 <!--Liste des projets-->
+                <div id="liste-projets">
+
+                    <!--Premier projet-->
+                    <div class="container-projet" data-bs-toggle="modal" data-bs-target="#modal3">
                         <div>
-                            <p>Cuisinez simple, rapide et équilibré avec nos recettes</p>
-                            <button id="projet-button-plus">
-                                <img src="img/picto-plus.png" alt="">
-                            </button>
+                            <img src="img/projet-blabladrar.png" alt="Image de description du projet BlaBla'Drar">
+                        </div>
+                        <div id="description-projet">
+                            <h3>BlaBla'Drar</h3>
+                            <div>
+                                <p>Application de covoiturage</p>
+                                <!-- <button id="projet-button-plus">
+                                    <img src="img/picto-plus.png" alt="">
+                                </button> -->
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Modal : Projet BlaBla'Drar-->
+                    <div class="modal modal-lg fade" id="modal3">
+
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="color: #342039;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="img/logo-blabladrar.png" alt="">
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" aria-describedby="content">
+                                    <span>Projet professionnel mené de Septembre 2023 à Juin 2024.</span>
+                                    <h2 class="mt-2 text-dark">BlaBla'Drar : L'application de covoiturage des étudiants de l'Adrar</h2>
+
+                                    <p>Lien des maquettes Figma : <a href="https://www.figma.com/file/9qCNzT3J6JOJ0AQR8lNVs6/BlaBlA'drar?type=design&node-id=96%3A2088&mode=dev" target="_blank">Maquettage BlaBla'Drar</a></p>
+                                    
+                                    <h4 class="mt-4">1. Contexte du projet : </h4>
+                                    <p class="text-justify">Dans le cadre de mon Bac+3 de Concepteur Développeur d'Applications, je suis amenée à travailler pendant 10 mois sur le développement d'une application de covoiturage destinée aux trajets du quotidien et spécialement développée pour les étudiants de l'Adrar.
+                                    </p>
+                                    
+                                    <h4 class="mt-4">2. Technologies utilisées : </h4>
+                                    <div class="d-flex flex-wrap mt-4 container" >
+                                        <div class="me-3 text-center">
+                                            <img src="img/picto-html.png" alt="">
+                                            <p>HTML</p>
+                                        </div>
+                                        <div class="me-2 text-center">
+                                            <img src="img/picto-css.png" alt="">
+                                            <p>CSS</p>
+                                        </div>
+                                        <div class="me-2 text-center">
+                                            <img src="img/picto-javascript.png" alt="">
+                                            <p>JavaScript</p>
+                                        </div>
+                                        <div class="me-2 text-center">
+                                            <img src="img/picto-react.png" alt="" width="50px" height="40px">
+                                            <p>React</p>
+                                        </div>
+                                        <div class="me-2 text-center">
+                                            <img src="img/picto-php.png" alt="">
+                                            <p class="mt-2">PHP</p>
+                                        </div>
+                                        <div class="me-2 text-center">
+                                            <img src="img/picto-symfony-noir.png" alt="">
+                                            <p>Symfony</p>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="mt-4">3. Fonctionnalités de l'application : </h4>
+                                    <ul class="text-justify">
+                                        <li>Fonctionnalité 1 : Connexion/Déconnexion au profil utilisateur ou administrateur</li>
+                                        <li>Fonctionnalité 2 : Rechercher un trajet en fonction du lieu de départ et du lieu d'arrivée (Utilisation d'une API externe)</li>
+                                        <li>Fonctionnalité 3 : Publier un trajet de covoiturage</li>
+                                        <li>Fonctionnalité 4 : Affichage de l'itinéraire du trajet sur une carte interactive</li>
+                                        <li>Fonctionnalité 5 : Messagerie instantannée</li>
+                                        <li>Fonctionnalité 6 : Outil pour calculer le prix d'un trajet</li>
+                                    </ul>
+                                    
+                                    <h4 class="mt-4">Compétences acquises : </h4>
+                                    <ul>
+                                        <li>Rédiger un cahier des charges en français et en anglais</li>
+                                        <li>Maquetter une application au format responsive (Logiciel Figma)</li>
+                                        <li>Analyse et conception grâce aux outils de diagramme et à la méthode merise</li>
+                                        <li>Adopter une démarche de gestion de projet agile</li>
+                                        <li>Mise en place d'un système de versionning du code (GitHub)</li>
+                                        <li>Développer des composants d'accès aux données</li>
+                                        <li>Développer la partie front-end et back-end d'une interface utilisateur</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Deuxième projet-->
+                    <div class="container-projet" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <div>
+                            <img src="img/projet-timecook.png" alt="Image de description du projet BlaBla'Drar">
+                        </div>
+                        <div id="description-projet">
+                            <h3>Time Cook</h3>
+                            <div>
+                                <p>Application de recettes de cuisine</p>
+                                <!-- <button id="projet-button-plus">
+                                    <img src="img/picto-plus.png" alt="">
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal : Projet BlaBla'Drar-->
+                    <div class="modal modal-lg fade" id="modal4">
+
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="color: #342039;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" aria-describedby="content">
+                                    <h2 class="mt-2 text-dark">Time Cook</h2>
+
+                                    <p>Lien vers la vidéo de l'application : <a href="https://www.linkedin.com/posts/oceane-hebrard_ios-application-mobile-activity-7052233746074193920-80Yy?utm_source=share&utm_medium=member_desktop" target="_blank">Application Time Cook</a></p>
+                                    
+                                    <h4 class="mt-4">1. Contexte du projet : </h4>
+                                    <p>Dans le cadre de ma formation avec l'Apple Foundation Program de Simplon, j'ai eu l'occasion de développer une application mobile iOS sur le thème de la cuisine. Cette application permet de faire gagner du temps et de simplifier la préparation des repas. Son but est de proposer des idées de recettes simples et rapides à réaliser en moins de 30 min et de lutter contre le gaspillage alimentaire.</p>
+                                    
+                                    <h4 class="mt-4">2. Technologies utilisées : </h4>
+                                    <p>Langages de programmation Apple : </p>
+                                    <div class="d-flex flex-wrap mt-4 container" >
+                                        <div class="me-3 text-center">
+                                            <img src="img/picto-swift.png" alt="">
+                                            <p>Swift</p>
+                                        </div>
+                                        <div class="me-2 text-center">
+                                            <img src="img/picto-swiftui.png" alt="">
+                                            <p>Swift UI</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4 class="mt-4">3. Compétences acquises : </h4>
+                                    <ul style="font-size: 15px;">
+                                        <li>Concevoir une interface d'application mobile qui répond à un besoin utilisateur</li>
+                                        <li>Maquetter une application mobile (Figma)</li>
+                                        <li>Acquérir les bases du langage de programmation Swift</li>
+                                        <li>Développer un prototype d'application mobile native iOS</li>
+                                        <li>Acquérir une connaissance des Human Interface Guidelines (directives UX design) d'Apple</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                
             </div>
-            
+
         </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <h2>Me contacter</h2>
-        <div id="contact">
-            <div>
-                <img src="img/phone.svg" alt="Pictogramme téléphone">
-                <p>07.80.01.74.47</p>
+     <!-- Footer -->
+     <footer>
+        <div class="container-lg">
+            <h2>Me contacter</h2>
+            <div id="contact">
+                <div>
+                    <img src="img/phone.svg" alt="Pictogramme téléphone">
+                    <span>07.80.01.74.47</span>
+                </div>
+                <div>
+                    <img src="img/mail.svg" alt="Pictogramme email">
+                    <span>oceane47.heb@gmail.com</span>
+                </div>
+                <div>
+                    <img src="img/localisation.svg" alt="Pictogramme de localisation">
+                    <span>Toulouse</span>
+                </div>
             </div>
-            <div>
-                <img src="img/mail.svg" alt="Pictogramme email">
-                <p>oceane47.heb@gmail.com</p>
-            </div>
-            <div>
-                <img src="img/localisation.svg" alt="Pictogramme de localisation">
-                <p>Toulouse</p>
-            </div>
-        </div>
-        <div id="footer-picto-reseaux-sociaux">
-            <a href="https://linkedin.com/in/oceane-hebrard" target="_blank"><img src="img/logo-linkedin.png" alt="Pictogramme noir et blanc Linkedin"></a>
-            <a href="https://github.com/oceaneheb" target="_blank"><img src="img/logo-github.png" alt="Pictogramme noir et blanc Git Hub"></a>
+            <div id="footer-picto-reseaux-sociaux">
+                <a href="https://linkedin.com/in/oceane-hebrard" target="_blank"><img src="img/picto-linkedin.png" alt="Pictogramme noir et blanc Linkedin"></a>
+                <a href="https://github.com/oceaneheb" target="_blank"><img src="img/picto-git-hub.svg" alt="Pictogramme noir et blanc Git Hub"></a>
+            </div>    
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
