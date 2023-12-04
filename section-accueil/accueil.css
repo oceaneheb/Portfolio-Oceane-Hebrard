@@ -1,39 +1,37 @@
-/* ------------ Section 1 : Accueil ---------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    color: #F8AFC0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    margin-top: 77px;
+}
+
+/* ----- Section Accueil ------ */
 
 #accueil {
     position: relative;
-    padding-top: 70px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 100px;
+    font-family: 'Inter', 'sans-serif';
+    width: 100%;
+    /* height: 80vh; */
 }
 
-/* Position des étoiles et de la fusée */
-.etoile3 {
-    position: absolute;
-    top: 7px;
-    left: 53px;
-}
-
-.etoile2 {
-    position: absolute;
-    top: 60px;
-    left: 29px;
-}
-
-.etoile1 {
-    position: absolute;
-    top: 29px;
-    left: 108px;
-}
-
-#fusee {
-    position: absolute;
-    bottom: 130px;
-    right: 22px;
-}
-
-/* Ombre lumineuse rose et violette arrière plan */
+/* Ombre lumineuse rose et violette arrière plan d'accueil */
 #cercle-shadow-purple-accueil {
     position: absolute;
     border-radius: 585px;
@@ -53,43 +51,107 @@
     background: #B43B85;
     width: 585px;
     height: 585px;
-    top: 371px;
+    top: 400px;
     right: 330px;
     filter: blur(182px);
     overflow: hidden;
     z-index: -1;
 }
 
-/* Image de profil Océane */
-.image-profil img {
-    width: 144px;
-    height: 144px;
+@media screen and (min-width: 768px) {
+    #cercle-shadow-purple-accueil {
+        top: -300px;
+        left: 400px;
+    }
+
+    #cercle-shadow-pink-accueil {
+        top: 450px;
+        left: -300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #cercle-shadow-purple-accueil {
+        top: -300px;
+        left: 550px;
+    }
+
+    #cercle-shadow-pink-accueil {
+        top: 450px;
+        left: -300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #cercle-shadow-purple-accueil {
+        top: -300px;
+        left: 1000px;
+    }
+
+    #cercle-shadow-pink-accueil {
+        top: 450px;
+        left: -300px;
+    }
+}
+
+#image-fusee-petit-ecran {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    #image-fusee-petit-ecran {
+        bottom: 30px;
+        right: 50px;
+    }
+} 
+
+@media screen and (max-width: 992px) {
+    #image-fusee-ecran-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #image-fusee-petit-ecran {
+        display: none;
+    }
+}
+
+
+#photo-oceane {
     border-radius: 50%;
     margin-bottom: 24px;
 }
 
-#accueil h3 {
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 25px;
+/* Titre h1 */
+@media screen and (max-width: 389px) {
+    #accueil h1 {
+        font-size: 22px;
+    }
+
+    #accueil h3 {
+        font-size: 15px;
+    }
 }
 
-h1 {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    font-family: 'Inter', sans-serif;
+@media only screen and (min-width: 390px) and (max-width: 568px) {
+    #accueil h1 {
+        font-size: 25px;
+    }
+
+    #accueil h3 {
+        font-size: 18px;
+    }
 }
 
-h1 span {
-    color: var(--purple);
+#accueil span {
+    color: #F8AFC0;
 }
 
-/* Boutton "Télécharger mon CV"*/
-#accueil-bouton-telecharger-cv {
+#btn-telecharger-cv {
     display: flex;
     flex-direction: row;
     font-size: 15px;
@@ -101,19 +163,12 @@ h1 span {
     gap: 10px;
     border-radius: 5px;
     background: linear-gradient(90deg, #FD6460 2.96%, #FF3481 102.96%);
-    color: white;
     font-family: 'Inter', 'sans-serif';
-    width: 200px;
-    height: 40px;
+    width: 230px;
+    height: 50px;
     text-decoration: none;
 }
 
-/* Logo des réseaux sociaux */
-.picto-reseau-sociaux {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    gap: 16px;
-    align-items: center;
-    width: 20%;
+#btn-telecharger-cv span {
+    font-size: 17px;
 }
