@@ -1,6 +1,6 @@
 const btn_burger = document.querySelector(".burger");
 btn_burger.addEventListener("click", function() {
-    const modal = document.querySelector(".modal");
+    const modal = document.querySelector(".modal-nav");
     modal.classList.toggle("show-modal");
 
     btn_burger.classList.toggle("fa-xmark");
@@ -10,7 +10,7 @@ const liens = document.querySelectorAll(".lien-navbar"); /*Liste qui contient to
 
 liens.forEach(lien => {
     lien.addEventListener("click", function() {
-        const modal = document.querySelector(".modal");
+        const modal = document.querySelector(".modal-nav");
         modal.classList.toggle("show-modal");
     })
 })
