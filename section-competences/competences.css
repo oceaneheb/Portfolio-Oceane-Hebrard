@@ -184,7 +184,7 @@ button {
 
 @keyframes cercle-vue-js {
     to {
-        stroke-dashoffset: 236;
+        stroke-dashoffset: 157;
     }
 }
 
@@ -195,7 +195,7 @@ button {
 
 @keyframes cercle-react {
     to {
-        stroke-dashoffset: 236;
+        stroke-dashoffset: 157;
     }
 }
 
